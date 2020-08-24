@@ -1,0 +1,322 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/ios/100/000000/traffic-jam.png">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@900&family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <title>Accident Statement Form</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+    </nav>
+    <div class="container margin-top-30 margin-bottom-100">
+        <div id="first_page">
+            <form action="">
+                <div class="form-group">
+                    <label>Vehicle registration number:</label>
+                    <input type="text" class="form-control" placeholder="" id="registeration-num">
+                </div>
+                <div class="form-group">
+                    <label>
+                        Vehicle owner (person or company) code:</label>
+                    <input type="text" class="form-control" placeholder="" id="owner-code">
+                </div>
+                <div class="form-group text-sm-right text-xs-left">
+                    <div class="form-check-inline">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="optradio">Driven by the owner
+                        </label>
+                    </div>
+                    <div class="form-check-inline">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="optradio">Another person was driving
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group form-check text-sm-right text-xs-left">
+                    <label class="form-check-label">
+                    <input class="form-check-input is-assistance" type="checkbox"> Roadside assistance is needed
+                  </label>
+                </div>
+                <!-- <div class="form-group text-right">
+                    <button type="button" class="btn btn-success first-continue">Continue</button>
+                </div> -->
+            </form>
+        </div>
+        <div id="assistance_page">
+            <form action="">
+                <div class="form-group">
+                    <label>
+                        The phone number you have call the roadside assistance service:
+                    </label>
+                    <input type="text" class="form-control" placeholder="" id="registeration-num">
+                </div>
+                <!-- <div class="form-group text-right">
+                    <button type="button" class="btn btn-default assistance-back">Back</button>
+                    <button type="button" class="btn btn-success assistance-continue">Continue</button>
+                </div> -->
+            </form>
+        </div>
+        <div id="detail_page">
+            <form action="">
+                <!-- your vehicle detail -->
+                <div class="form-group text-center">
+                    <h4>Your vehicle</h4>
+                    <hr>
+                </div>
+                <div class="form-group">
+                    <label>Driver</label>
+                    <input type="text" class="form-control" placeholder="" id="your-name">
+                </div>
+                <div class="form-group">
+                    <label>Driving license no.</label>
+                    <input type="text" class="form-control" placeholder="" id="your-license-no">
+                </div>
+                <div class="form-group">
+                    <label>State no.</label>
+                    <input type="text" class="form-control" placeholder="" id="your-state-no">
+                </div>
+                <div class="form-group">
+                    <label>Brand</label>
+                    <input type="text" class="form-control" placeholder="" id="your-brand">
+                </div>
+                <div class="form-group">
+                    <label>Model</label>
+                    <input type="text" class="form-control" placeholder="" id="your-model">
+                </div>
+                <div class="form-group">
+                    <label for="event-list">Nature of the event</label>
+                    <select class="form-control" id="event-list">
+                        <option>Car crash</option>
+                        <option>Glass damage</option>
+                        <option>Vehicle is stolen</option>
+                        <option>Vehicle is robbed</option>
+                        <option>Found damaged, traffic accident</option>
+                        <option>Vandalism, Illegal Activities of Third Persons</option>
+                        <option>Natural disaster</option>
+                        <option>Fire</option>
+                        <option>Other</option>
+                      </select>
+                </div>
+                <div class="form-group">
+                    <label for="">Are you a victim or a culprit?</label>
+                </div>
+                <div class="btn-group btn-group-lg form-group col-12 justify-content-around">
+                    <button type="button" class="btn btn-default col-5 btn-me-victim"> I am a victim </button>
+                    <button type="button" class="btn btn-default col-5 btn-me-culprit"> I am the culprit </button>
+                </div>
+                <div class="form-group">
+                    <label for="">The following were affected:</label>
+                    <div class="form-group form-check d-flex flex-column">
+                        <label class="form-check-label affected-vehicle">
+                        <input class="form-check-input" type="checkbox"> Vehicle
+                    </label>
+                        <label class="form-check-label affected-asset">
+                        <input class="form-check-input" type="checkbox"> Other assets
+                    </label>
+                        <label class="form-check-label affected-person">
+                        <input class="form-check-input" type="checkbox"> Injured person
+                    </label>
+                    </div>
+                </div>
+
+                <!-- offender's vehicle detail -->
+                <div class="form-group vehicle-detail">
+                    <div class="form-group text-center margin-top-50">
+                        <h4 class="title-who-vehicle">Offender 's vehicle</h4>
+                        <hr>
+                    </div>
+                    <div class="form-group">
+                        <label>License plate</label>
+                        <input type="text" class="form-control" placeholder="" id="offender-license">
+                    </div>
+                    <div class="form-group">
+                        <label>Driver's telephone number</label>
+                        <input type="text" class="form-control" placeholder="" id="offender-phonenum">
+                    </div>
+                    <p>
+                        We will send an SMS to this number with a link to your completed declaration for confirmation.
+                    </p>
+                </div>
+                <!-- event information -->
+                <div class="form-group text-center margin-top-50">
+                    <h4>Event information</h4>
+                    <hr>
+                </div>
+                <div class="form-group">
+                    <label for="">Date and time of the event</label>
+                    <div class='input-group date' id='datetimepicker5'>
+                        <input type='text' class="form-control" />
+                        <span class="input-group-addon margin-right-2">
+                            <span class="glyphicon glyphicon-search"><i class="far fa-calendar-alt fa-2x"></i></span>
+                        </span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Incident place</label>
+                    <input type="text" class="form-control" placeholder="Enter a location" id="pac-input">
+                    <div class="col-12 margin-top-30" id="map">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Event description</label>
+                    <textarea class="form-control" rows="5" id="event-description"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="">Registered with the police?</label>
+                </div>
+                <div class="btn-group btn-group-lg form-group col-12 justify-content-around">
+                    <button type="button" class="btn btn-default col-5 btn-police-yes"> Yes </button>
+                    <button type="button" class="btn btn-default col-5 btn-police-no"> No </button>
+                </div>
+                <div class="form-group police-detail">
+                    <label>Police contact details</label>
+                    <input type="text" class="form-control" placeholder="" id="police-details">
+                </div>
+                <div class="form-group">
+                    <label>Did you drive during the event?</label>
+                </div>
+                <div class="btn-group btn-group-lg form-group col-12 justify-content-around">
+                    <button type="button" class="btn btn-default col-5 btn-drive-yes"> Yes </button>
+                    <button type="button" class="btn btn-default col-5 btn-drive-no"> No </button>
+                    <button type="button" class="btn btn-default col-5 btn-drive-no-driver"> There was no driver </button>
+                </div>
+                <!-- Insurance information -->
+                <div class="form-group text-center margin-top-50">
+                    <h4>Insurance information</h4>
+                    <hr>
+                </div>
+                <div class="form-group">
+                    <label for="event-list">CASCO insurer</label>
+                    <select class="form-control" id="event-list">
+                        <option>Lithuanian Insurance</option>
+                        <option>Therefore</option>
+                        <option>BTA</option>
+                      </select>
+                </div>
+                <!-- Payment information -->
+                <div class="form-group text-center margin-top-50">
+                    <h4>Payment information</h4>
+                    <hr>
+                </div>
+                <div class="form-group">
+                    <div class="custom-control custom-radio item-car-service">
+                        <input type="radio" class="custom-control-input" id="radio-car-service" name="radio-car-service" value="customEx">
+                        <label class="custom-control-label" for="customRadio">I will repair the car service</label>
+                    </div>
+                    <div class="custom-control custom-radio item-pay-cash">
+                        <input type="radio" class="custom-control-input" id="radio-pay-cash" name="radio-pay-cash" value="customEx">
+                        <label class="custom-control-label" for="customRadio2">Please pay in cash</label>
+                    </div>
+                </div>
+                <div class="form-group car-service">
+                    <label>The name of the car service</label>
+                    <input type="text" class="form-control" placeholder="" id="car-service-name">
+                </div>
+                <div class="form-group pay-in-cash">
+                    <label>WERE GOING</label>
+                    <input type="text" class="form-control" placeholder="" id="were-going">
+                    <label>Name of the bank</label>
+                    <input type="text" class="form-control" placeholder="" id="bank-name">
+                    <label>Recipient</label>
+                    <input type="text" class="form-control" placeholder="" id="recipient">
+                </div>
+            </form>
+        </div>
+        <div id="photo_page">
+            <form action="">
+                <div class="form-group text-center">
+                    <h4>Add photos and documents</h4>
+                    <hr>
+                </div>
+                <div class="form-group">
+                    <label>Accident scene</label>
+                    <div class="row accident-photo-group margin-left-20 margin-right-20">
+                        <div class="accident-photo-wrapper">
+                            <div class="accident-photo margin-right-20 margin-top-20">
+                                <img src="">
+                                <button type="button" class="btn-photo btn-photo-delete">
+                                    <img src="../build/images/delete-button.svg">
+                                </button>
+                                <button type="button" class="btn-photo btn-photo-view" data-toggle="modal" data-target="#preview-img">
+                                    <img src="../build/images/view-button.svg">
+                                </button>
+                            </div>
+                        </div>
+                        <label class="add-photo margin-top-20">
+                            <input type="file" name="file" id="accident-scene" />
+                            <img src="../build/images/plus-button.svg" class="margin-top-29 margin-left-29">
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Culprit's vehicle damages</label>
+                    <div class="row culprit-photo-group margin-left-20 margin-right-20">
+                        <div class="culprit-photo-wrapper">
+                            <div class="culprit-photo margin-right-20 margin-top-20">
+                                <img src="">
+                                <button type="button" class="btn-photo btn-photo-delete">
+                                    <img src="../build/images/delete-button.svg">
+                                </button>
+                                <button type="button" class="btn-photo btn-photo-view" data-toggle="modal" data-target="#preview-img">
+                                    <img src="../build/images/view-button.svg">
+                                </button>
+                            </div>
+                        </div>
+                        <label class="add-photo margin-top-20">
+                            <input type="file" name="file" id="culprit-scene" />
+                            <img src="../build/images/plus-button.svg" class="margin-top-29 margin-left-29">
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Victim's vehicle damages</label>
+                    <div class="row victim-photo-group margin-left-20 margin-right-20">
+                        <div class="victim-photo-wrapper">
+                            <div class="victim-photo margin-right-20 margin-top-20">
+                                <img src="">
+                                <button type="button" class="btn-photo btn-photo-delete">
+                                    <img src="../build/images/delete-button.svg">
+                                </button>
+                                <button type="button" class="btn-photo btn-photo-view" data-toggle="modal" data-target="#preview-img">
+                                    <img src="../build/images/view-button.svg">
+                                </button>
+                            </div>
+                        </div>
+                        <label class="add-photo margin-top-20">
+                            <input type="file" name="file" id="victim-scene" />
+                            <img src="../build/images/plus-button.svg" class="margin-top-29 margin-left-29">
+                        </label>
+                    </div>
+                </div>
+            </form>
+
+            <div class="modal fade" id="preview-img">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <img src="" id="preview-photo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-bottom justify-content-between">
+        <span class="btn-back">Back</span>
+        <span class="btn-next">Next</span>
+    </nav>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js" integrity="sha512-rmZcZsyhe0/MAjquhTgiUcb4d9knaFc7b5xAfju483gbEXTkeJRUMIPk6s3ySZMYUHEcjKbjLjyddGWMrNEvZg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.2/min/dropzone.min.js" integrity="sha512-9WciDs0XP20sojTJ9E7mChDXy6pcO0qHpwbEJID1YVavz2H6QBz5eLoDD8lseZOb2yGT8xDNIV7HIe1ZbuiDWg==" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAH5HR_CZz20gUIc-srcMAEy3XyED_jGkk&libraries=places" async defer></script>
+<script src="js/0.chunk.js"></script><script src="js/app.js"></script></body>
+
+</html>

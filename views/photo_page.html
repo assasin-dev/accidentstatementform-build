@@ -1,0 +1,74 @@
+<form action="">
+    <div class="form-group text-center">
+        <h4>Add photos and documents</h4>
+        <hr>
+    </div>
+    <div class="form-group">
+        <label>Accident scene</label>
+        <div class="row accident-photo-group margin-left-20 margin-right-20">
+            <div class="accident-photo-wrapper">
+                <div class="accident-photo margin-right-20 margin-top-20">
+                    <img src="">
+                    <button type="button" class="btn-photo btn-photo-delete">
+                        <img src="../images/delete-button.svg">
+                    </button>
+                    <button type="button" class="btn-photo btn-photo-view" data-toggle="modal" data-target="#preview-img">
+                        <img src="../images/view-button.svg">
+                    </button>
+                </div>
+            </div>
+            <label class="add-photo margin-top-20">
+                <input type="file" name="file" id="accident-scene" />
+                <img src="../images/plus-button.svg" class="margin-top-29 margin-left-29">
+            </label>
+        </div>
+    </div>
+    <div class="form-group">
+        <label>Culprit's vehicle damages</label>
+        <div class="row culprit-photo-group margin-left-20 margin-right-20">
+            <div class="culprit-photo-wrapper">
+                <div class="culprit-photo margin-right-20 margin-top-20">
+                    <img src="">
+                    <button type="button" class="btn-photo btn-photo-delete">
+                        <img src="../images/delete-button.svg">
+                    </button>
+                    <button type="button" class="btn-photo btn-photo-view" data-toggle="modal" data-target="#preview-img">
+                        <img src="../images/view-button.svg">
+                    </button>
+                </div>
+            </div>
+            <label class="add-photo margin-top-20">
+                <input type="file" name="file" id="culprit-scene" />
+                <img src="../images/plus-button.svg" class="margin-top-29 margin-left-29">
+            </label>
+        </div>
+    </div>
+    <div class="form-group">
+        <label>Victim's vehicle damages</label>
+        <div class="row victim-photo-group margin-left-20 margin-right-20">
+            <div class="victim-photo-wrapper">
+                <div class="victim-photo margin-right-20 margin-top-20">
+                    <img src="">
+                    <button type="button" class="btn-photo btn-photo-delete">
+                        <img src="../images/delete-button.svg">
+                    </button>
+                    <button type="button" class="btn-photo btn-photo-view" data-toggle="modal" data-target="#preview-img">
+                        <img src="../images/view-button.svg">
+                    </button>
+                </div>
+            </div>
+            <label class="add-photo margin-top-20">
+                <input type="file" name="file" id="victim-scene" />
+                <img src="../images/plus-button.svg" class="margin-top-29 margin-left-29">
+            </label>
+        </div>
+    </div>
+</form>
+
+<div class="modal fade" id="preview-img">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <img src="" id="preview-photo">
+        </div>
+    </div>
+</div>

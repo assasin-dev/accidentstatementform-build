@@ -1,0 +1,166 @@
+<form action="">
+    <!-- your vehicle detail -->
+    <div class="form-group text-center">
+        <h4>Your vehicle</h4>
+        <hr>
+    </div>
+    <div class="form-group">
+        <label>Driver</label>
+        <input type="text" class="form-control" placeholder="" id="your-name">
+    </div>
+    <div class="form-group">
+        <label>Driving license no.</label>
+        <input type="text" class="form-control" placeholder="" id="your-license-no">
+    </div>
+    <div class="form-group">
+        <label>State no.</label>
+        <input type="text" class="form-control" placeholder="" id="your-state-no">
+    </div>
+    <div class="form-group">
+        <label>Brand</label>
+        <input type="text" class="form-control" placeholder="" id="your-brand">
+    </div>
+    <div class="form-group">
+        <label>Model</label>
+        <input type="text" class="form-control" placeholder="" id="your-model">
+    </div>
+    <div class="form-group">
+        <label for="event-list">Nature of the event</label>
+        <select class="form-control" id="event-list">
+            <option>Car crash</option>
+            <option>Glass damage</option>
+            <option>Vehicle is stolen</option>
+            <option>Vehicle is robbed</option>
+            <option>Found damaged, traffic accident</option>
+            <option>Vandalism, Illegal Activities of Third Persons</option>
+            <option>Natural disaster</option>
+            <option>Fire</option>
+            <option>Other</option>
+          </select>
+    </div>
+    <div class="form-group">
+        <label for="">Are you a victim or a culprit?</label>
+    </div>
+    <div class="btn-group btn-group-lg form-group col-12 justify-content-around">
+        <button type="button" class="btn btn-default col-5 btn-me-victim"> I am a victim </button>
+        <button type="button" class="btn btn-default col-5 btn-me-culprit"> I am the culprit </button>
+    </div>
+    <div class="form-group">
+        <label for="">The following were affected:</label>
+        <div class="form-group form-check d-flex flex-column">
+            <label class="form-check-label affected-vehicle">
+            <input class="form-check-input" type="checkbox"> Vehicle
+        </label>
+            <label class="form-check-label affected-asset">
+            <input class="form-check-input" type="checkbox"> Other assets
+        </label>
+            <label class="form-check-label affected-person">
+            <input class="form-check-input" type="checkbox"> Injured person
+        </label>
+        </div>
+    </div>
+
+    <!-- offender's vehicle detail -->
+    <div class="form-group vehicle-detail">
+        <div class="form-group text-center margin-top-50">
+            <h4 class="title-who-vehicle">Offender 's vehicle</h4>
+            <hr>
+        </div>
+        <div class="form-group">
+            <label>License plate</label>
+            <input type="text" class="form-control" placeholder="" id="offender-license">
+        </div>
+        <div class="form-group">
+            <label>Driver's telephone number</label>
+            <input type="text" class="form-control" placeholder="" id="offender-phonenum">
+        </div>
+        <p>
+            We will send an SMS to this number with a link to your completed declaration for confirmation.
+        </p>
+    </div>
+    <!-- event information -->
+    <div class="form-group text-center margin-top-50">
+        <h4>Event information</h4>
+        <hr>
+    </div>
+    <div class="form-group">
+        <label for="">Date and time of the event</label>
+        <div class='input-group date' id='datetimepicker5'>
+            <input type='text' class="form-control" />
+            <span class="input-group-addon margin-right-2">
+                <span class="glyphicon glyphicon-search"><i class="far fa-calendar-alt fa-2x"></i></span>
+            </span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label>Incident place</label>
+        <input type="text" class="form-control" placeholder="Enter a location" id="pac-input">
+        <div class="col-12 margin-top-30" id="map">
+        </div>
+    </div>
+    <div class="form-group">
+        <label>Event description</label>
+        <textarea class="form-control" rows="5" id="event-description"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="">Registered with the police?</label>
+    </div>
+    <div class="btn-group btn-group-lg form-group col-12 justify-content-around">
+        <button type="button" class="btn btn-default col-5 btn-police-yes"> Yes </button>
+        <button type="button" class="btn btn-default col-5 btn-police-no"> No </button>
+    </div>
+    <div class="form-group police-detail">
+        <label>Police contact details</label>
+        <input type="text" class="form-control" placeholder="" id="police-details">
+    </div>
+    <div class="form-group">
+        <label>Did you drive during the event?</label>
+    </div>
+    <div class="btn-group btn-group-lg form-group col-12 justify-content-around">
+        <button type="button" class="btn btn-default col-5 btn-drive-yes"> Yes </button>
+        <button type="button" class="btn btn-default col-5 btn-drive-no"> No </button>
+        <button type="button" class="btn btn-default col-5 btn-drive-no-driver"> There was no driver </button>
+    </div>
+    <!-- Insurance information -->
+    <div class="form-group text-center margin-top-50">
+        <h4>Insurance information</h4>
+        <hr>
+    </div>
+    <div class="form-group">
+        <label for="event-list">CASCO insurer</label>
+        <select class="form-control" id="event-list">
+            <option>Lithuanian Insurance</option>
+            <option>Therefore</option>
+            <option>BTA</option>
+          </select>
+    </div>
+    <!-- Payment information -->
+    <div class="form-group text-center margin-top-50">
+        <h4>Payment information</h4>
+        <hr>
+    </div>
+    <div class="form-group">
+        <div class="custom-control custom-radio item-car-service">
+            <input type="radio" class="custom-control-input" id="radio-car-service" name="radio-car-service" value="customEx">
+            <label class="custom-control-label" for="customRadio">I will repair the car service</label>
+        </div>
+        <div class="custom-control custom-radio item-pay-cash">
+            <input type="radio" class="custom-control-input" id="radio-pay-cash" name="radio-pay-cash" value="customEx">
+            <label class="custom-control-label" for="customRadio2">Please pay in cash</label>
+        </div>
+    </div>
+    <div class="form-group car-service">
+        <label>The name of the car service</label>
+        <input type="text" class="form-control" placeholder="" id="car-service-name">
+    </div>
+    <div class="form-group pay-in-cash">
+        <label>WERE GOING</label>
+        <input type="text" class="form-control" placeholder="" id="were-going">
+        <label>Name of the bank</label>
+        <input type="text" class="form-control" placeholder="" id="bank-name">
+        <label>Recipient</label>
+        <input type="text" class="form-control" placeholder="" id="recipient">
+    </div>
+
+
+</form>
